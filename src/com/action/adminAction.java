@@ -8,7 +8,9 @@ import org.apache.struts2.ServletActionContext;
 import com.dao.TAdminDAO;
 import com.model.TAdmin;
 import com.opensymphony.xwork2.ActionSupport;
-
+/*
+	管理员功能对应的action(客户端请求入口)
+*/
 public class adminAction extends ActionSupport
 {
 	private int userId;
@@ -22,20 +24,24 @@ public class adminAction extends ActionSupport
 
 	private TAdminDAO adminDAO;
 	
-	
+	/*
+		添加管理员对应的处理入口
+	*/
 	public String adminAdd()
 	{
 		TAdmin admin=new TAdmin();
 		admin.setUserName(userName);
 		admin.setUserPw(userPw);
 		adminDAO.save(admin);
-		this.setMessage("�����ɹ�");
+		this.setMessage("²Ù×÷³É¹¦");
 		this.setPath("adminManage.action");
 		return "succeed";
 	}
 	
 	
-	
+	/*
+		显示所有管理员的入口
+	*/
 	public String adminManage()
 	{
 		List adminList=adminDAO.findAll();
@@ -44,17 +50,18 @@ public class adminAction extends ActionSupport
 		return ActionSupport.SUCCESS;
 	}
 	
-	
+	/*
+	删除管理员的入口
+	*/
 	public String adminDel()
 	{
 		adminDAO.delete(adminDAO.findById(userId));
-		this.setMessage("ɾ���ɹ�");
+		this.setMessage("É¾³ý³É¹¦");
 		this.setPath("adminManage.action");
 		return "succeed";
 	}
 	
 	
-
 	public TAdminDAO getAdminDAO()
 	{
 		return adminDAO;
