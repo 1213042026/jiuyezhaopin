@@ -7,7 +7,11 @@
 		<welcome-file>/qiantai/default.jsp</welcome-file>
 	</welcome-file-list>
 
-
+	<init-param>  
+	    <param-name>crossDomainSessionSecurity</param-name>  
+	    <param-value>false</param-value>  
+	</init-param>  
+	<load-on-startup>1</load-on-startup>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/applicationContext.xml</param-value>
