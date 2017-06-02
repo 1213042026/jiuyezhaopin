@@ -84,5 +84,10 @@ public class TStu implements java.io.Serializable
 	{
 		this.stuXuehao = stuXuehao;
 	}
-
+	@Override
+	public String toString() {
+		return "TStu [stuId=" + stuId + ", stuXuehao=" + stuXuehao + ", stuRealname=" + stuRealname + ", stuSex="
+				+ stuSex + ", stuAge=" + stuAge + ", loginName=" + loginName + ", loginPw=" + loginPw + ", del=" + del
+				+ "]";
+	}
 }

@@ -102,6 +102,14 @@ String path = request.getContextPath();
 	<table width='99%' height="100%" border='0' cellspacing='0' cellpadding='0'>
 	  <tr>
 	    <td style='padding-left:3px;padding-top:8px' valign="top">
+	     <dl class='bitem'>
+	        <dt onClick='showHide("items1_1")'><b>企业信息</b></dt>
+	        <dd style='display:block' class='sitem' id='items1_1'>
+	          <ul class='sitemu'>
+	             <li><a href='<%=path %>/showQiye.action' target='main'>企业信息</a> </li>
+	          </ul>
+	        </dd>
+	      </dl>
 		  <!-- 1 -->
 	      <dl class='bitem'>
 	        <dt onClick='showHide("items1_1")'><b>招聘信息管理</b></dt>

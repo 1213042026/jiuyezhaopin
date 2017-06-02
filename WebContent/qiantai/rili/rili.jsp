@@ -29,7 +29,7 @@
 
 <html>
     <head>
-      <title>求职招聘网站</title>
+      <title>就业网站</title>
       <script type="text/javascript">
         function showTime(showWhere){
             var now=new Date();

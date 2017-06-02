@@ -125,6 +125,9 @@
         <action name="zhaopinManaMy" class="zhaopinAction" method="zhaopinManaMy">
             <result name="success">/aqiye/zhaopin/zhaopinManaMy.jsp</result>
         </action>
+        <action name="showQiye" class="zhaopinAction" method="showQiye">
+            <result name="success">/aqiye/zhaopin/showQiye.jsp</result>
+        </action>
         <action name="zhaopin_all_shixi" class="zhaopinAction" method="zhaopin_all_shixi">
             <result name="success">/qiantai/zhaopin/zhaopin_all_shixi.jsp</result>
         </action>
@@ -146,6 +149,9 @@
         </action>
         <action name="toudijianliManaMy" class="toudijianliAction" method="toudijianliManaMy">
             <result name="success">/astu/toudijianli/toudijianliManaMy.jsp</result>
+        </action>
+        <action name="showStu" class="toudijianliAction" method="showStu">
+            <result name="success">/astu/toudijianli/showStu.jsp</result>
         </action>
         <action name="toudijianliChakan_qiye" class="toudijianliAction" method="toudijianliChakan_qiye">
             <result name="success">/aqiye/toudijianli/toudijianliChakan_qiye.jsp</result>

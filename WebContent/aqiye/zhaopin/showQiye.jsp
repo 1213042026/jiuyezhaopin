@@ -16,36 +16,42 @@ String path = request.getContextPath();
 		<link rel="stylesheet" type="text/css" href="<%=path %>/css/base.css" />
 		
         <script language="javascript">
-           function down1(fujianPath,fujianYuashiMing)
-           {
-               var url="<%=path %>/updown/updown.jsp?fujianPath="+fujianPath+"&fujianYuashiMing="+fujianYuashiMing;
-		       url=encodeURI(url); 
-               url=encodeURI(url); 
-               window.open(url,"_self");
-           }
         </script>
 	</head>
 
 	<body leftmargin="2" topmargin="2" background='<%=path %>/img/allbg.gif'>
 			<table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 				<tr bgcolor="#E7E7E7">
-					<td height="14" colspan="2" background="<%=path %>/img/tbg.gif">&nbsp;投递简历记录&nbsp;</td>
+					<td height="14" colspan="2" background="<%=path %>/img/tbg.gif">&nbsp;企业信息&nbsp;</td>
 				</tr>
 				<tr align="center" bgcolor="#FAFAF1" height="22">
-					<td width="50%">投递简历时间</td>
-					<td width="50%">简历附件</td>
+					<td width="20%">用戶名</td>
+					<td width="20%">姓名</td>
+					<td width="20%">地址</td>
+					<td width="10%">电话</td>
+					<td width="20%">邮箱</td>
+					<td width="10%">QQ</td>
 		        </tr>	
-				<s:iterator value="#request.toudijianliList" id="toudijianli">
 				<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='red';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
 					<td bgcolor="#FFFFFF" align="center">
-						<s:property value="#toudijianli.shijian"/>
+						<s:property value="#request.qiye.userName"/>
 					</td>
 					<td bgcolor="#FFFFFF" align="center">
-						<s:property value="#toudijianli.fujianYuanshiming"/>
-						<a href="#" onclick="down1('<s:property value="#toudijianli.fujian"/>','<s:property value="#toudijianli.fujianYuanshiming"/>')" style="font-size: 10px;color: red">下载</a>
+						<s:property value="#request.qiye.userRealname"/>
+					</td>
+					<td bgcolor="#FFFFFF" align="center">
+						<s:property value="#request.qiye.userAddress"/>
+					</td>
+					<td bgcolor="#FFFFFF" align="center">
+						<s:property value="#request.qiye.userTel"/>
+					</td>
+					<td bgcolor="#FFFFFF" align="center">
+						<s:property value="#request.qiye.userEmail"/>
+					</td>
+					<td bgcolor="#FFFFFF" align="center">
+						<s:property value="#request.qiye.userQq"/>
 					</td>
 				</tr>
-				</s:iterator>
 			</table>
 	</body>
 </html>

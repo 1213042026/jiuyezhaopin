@@ -43,8 +43,6 @@ public class toudijianliAction extends ActionSupport
 		return "succeed";
 	}
 	
-	
-	
 	public String toudijianliManaMy()
 	{
 		Map session= ServletActionContext.getContext().getSession();
@@ -56,6 +54,14 @@ public class toudijianliAction extends ActionSupport
 		return ActionSupport.SUCCESS;
 	}
 
+	public String showStu()
+	{
+		Map session= ServletActionContext.getContext().getSession();
+		TStu stu=(TStu)session.get("user");
+		Map request=(Map)ServletActionContext.getContext().get("request");
+		request.put("stu", stu);
+		return ActionSupport.SUCCESS;
+	}
 	
 	public String toudijianliChakan_qiye()
 	{

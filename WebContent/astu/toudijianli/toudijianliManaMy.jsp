@@ -42,7 +42,7 @@ String path = request.getContextPath();
 					</td>
 					<td bgcolor="#FFFFFF" align="center">
 						<s:property value="#toudijianli.fujianYuanshiming"/>
-						<a href="#" onclick="down1('<s:property value="#toudijianli.fujian"/>','<s:property value="#toudijianli.fujianYuanshiming"/>')" style="font-size: 10px;color: red">down</a>
+						<a href="#" onclick="down1('<s:property value="#toudijianli.fujian"/>','<s:property value="#toudijianli.fujianYuanshiming"/>')" style="font-size: 10px;color: red">下载</a>
 					</td>
 				</tr>
 				</s:iterator>

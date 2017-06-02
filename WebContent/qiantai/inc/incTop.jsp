@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
       <style type="text/css">
-        .Header {background: url(<%=path %>/img/banner.jpg) #d10e00 repeat-x left top; height: 110px;width: 966px;}
+        .Header {}
         .HeaderTop {margin: 0px auto;}
       </style>
       <script type="text/javascript">
@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
         <div class="Header HeaderTop">
 			<br/>
-			<font style="font-size: 40px;color: white;font-weight: bolder;display: block;text-align: center;"></font>
+			<font style="font-size: 40px;color: white;font-weight: bolder;display: block;text-align: center;">就业网</font>
 		</div>
 		<div class="topmenu cbody1">
 			<ul>

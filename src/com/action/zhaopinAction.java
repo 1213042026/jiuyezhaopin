@@ -74,6 +74,16 @@ public class zhaopinAction extends ActionSupport
 		request.put("zhaopinList", zhaopinList);
 		return ActionSupport.SUCCESS;
 	}
+
+	public String showQiye()
+	{
+		Map session= ServletActionContext.getContext().getSession();
+		TUser user=(TUser)session.get("user");
+		
+		Map request=(Map)ServletActionContext.getContext().get("request");
+		request.put("qiye", user);
+		return ActionSupport.SUCCESS;
+	}
 	
 	
 	public String zhaopin_all_shixi()

@@ -50,7 +50,7 @@ String path = request.getContextPath();
 					<td bgcolor="#FFFFFF" align="center">
 						<s:property value="#doc.fujianYuanshiming"/>
 						&nbsp;&nbsp;&nbsp;
-						<a href="#" onclick="down1('<s:property value="#doc.fujian"/>','<s:property value="#doc.fujianYuanshiming"/>')" style="font-size: 10px;color: red">down</a>
+						<a href="#" onclick="down1('<s:property value="#doc.fujian"/>','<s:property value="#doc.fujianYuanshiming"/>')" style="font-size: 10px;color: red">下载</a>
 					</td>
 					<td bgcolor="#FFFFFF" align="center">
 						<a class="pn-loperator" href="<%=path %>/docDel.action?id=<s:property value="#doc.id"/>">删除</a>

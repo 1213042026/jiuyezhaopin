@@ -104,8 +104,11 @@ String path = request.getContextPath();
 	    <td style='padding-left:3px;padding-top:8px' valign="top">
 		  <!-- 1 -->
 	      <dl class='bitem'>
-	        <dt onClick='showHide("items1_1")'><b>投递简历记录</b></dt>
+	        <dt onClick='showHide("items1_1")'><b>个人中心</b></dt>
 	        <dd style='display:block' class='sitem' id='items1_1'>
+	          <ul class='sitemu'>
+	             <li><a href='<%=path %>/showStu.action' target='main'>我的信息</a> </li>
+	          </ul>
 	          <ul class='sitemu'>
 	             <li><a href='<%=path %>/toudijianliManaMy.action' target='main'>投递简历记录</a> </li>
 	          </ul>
